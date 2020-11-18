@@ -1,9 +1,5 @@
 {{#if userNotesCount}}
-  <a href {{action "showUserNotes"}} title="{{userNotesTitle}}">
-    {{#if emojiEnabled}}
-      <img src={{emojiUrl}} title={{userNotesTitle}} alt="pencil" class="emoji">
-    {{else}}
-      {{d-icon "sticky-note"}}
-    {{/if}}
+  <a href {{action "showUserNotes"}} title="{{userNotesTitle}}" class="user-notes-note">
+    NOTABLE USER
   </a>
 {{/if}}
